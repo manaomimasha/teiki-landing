@@ -1118,3 +1118,99 @@
     padding: 10px 0;
   }
       
+      
+      
+      /* prueba */
+      
+      
+          .iconos {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-shadow: none; /* Sin delineado */
+        border: none; /* Sin borde */
+        text-decoration: none; /* Sin subrayado */
+      }
+  
+      .iconos i {
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #32aeb4; /* Color turquesa */
+        text-shadow: none; /* Sin delineado */
+        border: none; /* Sin borde */
+        text-decoration: none; /* Sin subrayado */
+      }
+  
+      /* Ajuste adicional para el ícono de WhatsApp */
+      .whatsapp-icon {
+        position: relative;
+        top: 50%;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        text-shadow: none; /* Sin delineado */
+      }
+  
+      /* Estilos generales para la navegación */
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9rem;
+        width: 100%;
+        padding: 2rem;
+        z-index: 100;
+      }
+  
+      .idioma {
+        padding: 10px;
+      }
+  
+      .nav.sticky {
+        background-color: rgba(255, 255, 255, 0.95);
+      }
+  
+      .nav__logo {
+        height: 10rem;
+        transition: all 0.3s;
+      }
+  
+      .nav__links {
+        display: flex;
+        align-items: center;
+        list-style: none;
+      }
+  
+      .nav__item {
+        margin-left: 4rem;
+      }
+  
+      .nav__link:link,
+      .nav__link:visited,
+      .nav__linkc:link,
+      .nav__linkc:visited {
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        transition: all 0.3s;
+      }
+  
+      /* Accesibilidad */
+      button:focus {
+        outline: none;
+      }
+  
+      img {
+        transition: filter 0.5s;
+      }
+  
+      .lazy-img {
+        filter: blur(20px);
+      }

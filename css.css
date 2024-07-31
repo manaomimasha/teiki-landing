@@ -157,6 +157,8 @@ img {
 .nav__logo {
   height: 10rem;
   transition: all 0.3s;
+  margin-left: 30px;
+  
 }
 
 .nav__links {
@@ -187,31 +189,13 @@ img {
   .nav__links .nav__link:link,
   .nav__links .nav__link:visited {
     font-size: 15px;
-    /* Cambia el tamaño de la letra según tus preferencias */
     font-weight: 400;
     color: inherit;
-    text-decoration: none;
-    /* display: block; */
-    transition: all 0.3s;
+    text-decoration: none;    transition: all 0.3s;
   }
 
   #boton {
     color: white
-  }
-
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10rem;
-    width: 100%;
-    z-index: 100;
-    padding: 0;
-    margin-left: -40px;
-  }
-
-  .nav__item .nav__itemc {
-    margin-left: 4rem;
   }
 
 }
@@ -227,6 +211,7 @@ img {
     z-index: 100;
     padding: 0;
     flex-direction: column;
+       margin-left: -50px;
   }
 
   .nav__links {
@@ -714,29 +699,6 @@ h4 {
   }
 }
 
-/* SIGNUP */
-.section--sign-up {
-  background-color: #37383d;
-  border-top: none;
-  border-bottom: 1px solid #444;
-  text-align: center;
-  padding: 10rem 3rem;
-}
-
-.section--sign-up .section__header {
-  color: #fff;
-  text-align: center;
-}
-
-.section--sign-up .section__title {
-  margin-bottom: 6rem;
-}
-
-.section--sign-up .btn {
-  font-size: 1.9rem;
-  padding: 2rem 5rem;
-}
-
 /* FOOTER */
 .footer {
   padding: 10rem 3rem;
@@ -789,75 +751,6 @@ h4 {
 }
 
 
-/* MODAL WINDOW */
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 60rem;
-  background-color: #f3f3f3;
-  padding: 5rem 6rem;
-  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  transition: all 0.5s;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-  z-index: 100;
-  transition: all 0.5s;
-}
-
-.modal__header {
-  font-size: 3.25rem;
-  margin-bottom: 4.5rem;
-  line-height: 1.5;
-}
-
-.modal__form {
-  margin: 0 3rem;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  gap: 2.5rem;
-}
-
-.modal__form label {
-  font-size: 1.7rem;
-  font-weight: 500;
-}
-
-.modal__form input {
-  font-size: 1.7rem;
-  padding: 1rem 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
-}
-
-.modal__form button {
-  grid-column: 1 / span 2;
-  justify-self: center;
-  margin-top: 1rem;
-}
-
-.btn--close-modal {
-  font-family: inherit;
-  color: inherit;
-  position: absolute;
-  top: 0.5rem;
-  right: 2rem;
-  font-size: 4rem;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
 
 .hidden {
   visibility: hidden;
@@ -874,34 +767,6 @@ h4 {
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;
-}
-
-
-
-
-/* SCREENSHOS */
-.screenshots {
-  height: 1500px;
-}
-
-.screenshots img {
-  height: 400px;
-  width: auto;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
-
-
-.grid-imagenes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* 3 columnas en el grid */
-  gap: 10px;
-  /* Espacio entre las imágenes */
-}
-
-.header__img {
-  max-width: 100%;
-  height: auto;
 }
 
 
@@ -976,45 +841,6 @@ h4 {
   /* Sin subrayado */
 }
 
-.iconos i {
-  font-size: 30px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #32aeb4;
-  /* Color turquesa */
-  text-shadow: none;
-  /* Sin delineado */
-  border: none;
-  /* Sin borde */
-  text-decoration: none;
-  /* Sin subrayado */
-}
-
-/* Ajuste adicional para el ícono de WhatsApp */
-.whatsapp-icon {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  background: transparent;
-  text-shadow: none;
-  /* Sin delineado */
-}
-
-/* Estilos generales para la navegación */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 9rem;
-  width: 100%;
-  padding: 2rem;
-  z-index: 100;
-}
 
 .idioma {
   padding: 10px;
@@ -1082,7 +908,7 @@ img {
 
   .get-app {
     list-style: none;
-    padding: 10px 100px 0 100px;
+    /* padding: 10px 100px 0 100px; */
     margin: 120px 0 0 0;
   }
 
@@ -1093,11 +919,8 @@ img {
   width: 50px;
   height: 50px;
   text-shadow: none;
-  /* Sin delineado */
   border: none;
-  /* Sin borde */
   text-decoration: none;
-  /* Sin subrayado */
 }
 
 .iconos i {
@@ -1108,13 +931,9 @@ img {
   align-items: center;
   justify-content: center;
   color: #32aeb4;
-  /* Color turquesa */
   text-shadow: none;
-  /* Sin delineado */
   border: none;
-  /* Sin borde */
   text-decoration: none;
-  /* Sin subrayado */
 }
 
 /* Ajuste adicional para el ícono de WhatsApp */
@@ -1129,51 +948,13 @@ img {
   /* Sin delineado */
 }
 
-/* Estilos generales para la navegación */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 9rem;
-  width: 100%;
-  padding: 2rem;
-  z-index: 100;
-}
-
-.idioma {
-  padding: 10px;
-}
-
-.nav.sticky {
-  background-color: rgba(255, 255, 255, 0.95);
-}
-
-.nav__logo {
-  height: 10rem;
-  transition: all 0.3s;
-}
-
-.nav__links {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-.nav__item {
-  margin-left: 4rem;
-}
-
-.nav__link:link,
-.nav__link:visited,
-.nav__linkc:link,
-.nav__linkc:visited {
-  font-size: 1.7rem;
-  font-weight: 400;
-  color: inherit;
-  text-decoration: none;
-  display: block;
-  transition: all 0.3s;
-}
+/* icono mail */
+    .i-email { 
+         font-family: FontAwesome;
+         font-style: normal;
+         color: #FFF;
+         margin-right: 20px;
+      }
 
 /* Accesibilidad */
 button:focus {
@@ -1187,8 +968,6 @@ img {
 .lazy-img {
   filter: blur(20px);
 }
-
-
 
 /* boton flotante wh */
 /*Estilos generales del boton whatsapp*/
@@ -1245,8 +1024,8 @@ img {
     transform: scale(1);
   }
 }
-/* video */
 
+/* video flow */
 
 .video-container {
   display: flex;

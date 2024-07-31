@@ -1,4 +1,3 @@
-
 /* CON AZUL */
 :root {
   --color-primary: #3aabd7;
@@ -278,6 +277,10 @@ img {
     /* padding-top: 22rem; */
     align-items: start;
     justify-items: start;
+  }
+
+  .header {
+    margin-bottom: 50rem;
   }
 }
 
@@ -1218,22 +1221,26 @@ img {
   0% {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
   }
+
   70% {
     box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
 
-/*Estilos de animacion del icono latiendooooo */
+/*Estilos de animacion del icono latiendo*/
 @keyframes beat {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(1);
   }

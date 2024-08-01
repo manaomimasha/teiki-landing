@@ -53,14 +53,7 @@
 
     <header class="header">
       <nav class="nav">
-        <img
-          src="https://live.staticflickr.com/65535/53888382252_6b04594d17.jpg"
-          alt="Bankist logo"
-          class="nav__logo"
-          id="logo"
-          designer="Jonas"
-          data-version-number="3.0"
-        />
+        <div></div>
         <ul class="nav__links">
           <!-- <li class="nav__item">
             <a class="nav__link" href="#section--1">NUESTRA VISIÓN</a>
@@ -68,42 +61,35 @@
           <li class="nav__item">
             <a class="nav__link" href="#section--2">NUESTROS SERVICIOS</a>
           </li>
-          <!-- <li class="nav__item">
-            <a class="nav__link" href="#section--3">TESTIMONIOS</a>
-          </li> -->
+          <li class="nav__item">
+           <a class="nav__link" href="#section--3">CONTACTANOS</a>
+          </li> 
         </ul>
       </nav>
 
-      <ul class="get-app">
-        <li class="iconos-menu">
-          <a
-            target="_blank"
-            class="iconos"
-            href="https://ar.linkedin.com/company/teikiapp"
-          >
-            <i class="fab fa-linkedin" aria-hidden="true" title="linkedin"></i>
-          </a>
-          <a
-            target="_blank"
-            class="iconos"
-            href="mailto:teiki.company@gmail.com"
-          >
-            <i
-              class="fa-3x fa-envelope-o i-email"
-              aria-hidden="true"
-              title="email"
-            ></i>
-          </a>
+      <ul></ul>
 
+      <div class="header__title">
+        <h1>
+          <img
+            src="https://live.staticflickr.com/65535/53888382252_6b04594d17.jpg"
+            alt="teiki  logo"
+            class="nav__logo"
+            id="logo"
+            designer="Jonas"
+            data-version-number="3.0"
+          />
+        </h1>
+        <h4>Nuestra web: 
           <a
-            target="_blank"
-            class="iconos"
-            href="https://wa.me/5491154879987?text=Hola%2C%20qué%20tal%3F%20Me%20gustaría%20saber%20más%20sobre%20Teiki"
-          >
-            <i class="fab fa-whatsapp" aria-hidden="true" title="whatsapp"></i>
-          </a>
-        </li>
-        <li>
+          href="https://www.teiki.com.ar/"
+        >https://www.teiki.com.ar/ </a>
+
+          Nuestra app:</h4>
+        <!-- <button class="btn--text btn--scroll-to"> -->
+        <!-- <button> -->
+        <!-- Nuestra visión &DownArrow; -->
+        <div>
           <a
             href="https://play.google.com/store/apps/details?id=com.teiki&pli=1"
           >
@@ -112,21 +98,8 @@
               alt="PlayStore logo"
             />
           </a>
-        </li>
-      </ul>
-
-      <div class="header__title">
-        <h1>
-          Ahorra
-          <span class="highlight">tiempo</span> <br />
-          con nuestra
-          <span class="highlight">tecnología</span>
-        </h1>
-        <h4>¡Ahorra tiempo, vive más momentos especiales!</h4>
-        <button class="btn--text btn--scroll-to">
-          <!-- Nuestra visión &DownArrow; -->
-           
-        </button>
+        </div>
+        <!-- </button> -->
         <!--     <img src="
           https://images.unsplash.com/photo-1521401292936-0a2129a30b1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" class="header__img" alt="imagen hero" /> -->
         <div class="video-container">
@@ -202,7 +175,7 @@
 
     <section class="section vision" id="section--2">
       <div class="section__title">
-        <h2 class="section__description">SERVICIOS</h2>
+        <!-- <h2 class="section__description">SERVICIOS</h2> -->
         <h3 class="section__header">Por que elegirnos?</h3>
       </div>
 
@@ -255,11 +228,7 @@
         >
           <div class="icono-centrado">
             <div class="operations__icon operations__icon--2">
-              <img
-                src="./iconos/user.png"
-                alt="user"
-                class="operations__img"
-              />
+              <img src="./iconos/user.png" alt="user" class="operations__img" />
               <svg>
                 <use xlink:href="img/icons.svg#icon-upload"></use>
               </svg>
@@ -405,10 +374,12 @@
       </div>
     </section> -->
 
-    <footer class="footer">
+    <footer class="footer" id="section--3">
       <ul class="footer__nav">
         <li class="footer__item">
-          <a class="footer__link" href="https://www.teiki.com.ar/">Ingresa al mapa para ver Negocios</a>
+          <a class="footer__link" href="https://www.teiki.com.ar/"
+            >Ingresa al mapa para ver Negocios</a
+          >
         </li>
 
         <li class="footer__item">
@@ -419,21 +390,55 @@
           </a>
         </li>
       </ul>
-      <img
-        src="https://live.staticflickr.com/65535/53888382252_6b04594d17.jpg"
-        alt="Logo"
-        class="footer__logo"
-      />
-    </footer>
+      <div class="contactanos footer__item footer__nav">
+        <h4>Contactános</h4>
+      </div>
+      <ul class="footer__item contactenos-items">
+        <li class="iconos-menu">
+          <a
+            target="_blank"
+            class="iconos"
+            href="https://ar.linkedin.com/company/teikiapp"
+          >
+            <i class="fab fa-linkedin" aria-hidden="true" title="linkedin"></i>
+          </a>
+          <a
+            target="_blank"
+            class="iconos"
+            href="mailto:teiki.company@gmail.com"
+          >
+            <i
+              class="fa-3x fa-envelope-o i-email"
+              aria-hidden="true"
+              title="email"
+            ></i>
+          </a>
 
-    <div class="modal hidden">
-      <button class="btn--close-modal">&times;</button>
-      <h2 class="modal__header">
-        Open your bank account <br />
-        in just <span class="highlight">5 minutes</span>
-      </h2>
-    </div>
-    <div class="overlay hidden"></div>
+          <a
+            target="_blank"
+            class="iconos"
+            href="https://wa.me/5491154879987?text=Hola%2C%20qué%20tal%3F%20Me%20gustaría%20saber%20más%20sobre%20Teiki"
+          >
+            <i class="fab fa-whatsapp" aria-hidden="true" title="whatsapp"></i>
+          </a>
+        </li>
+      </ul>
+    
+    <ul class="footer__item footer-logo">
+      <li class="iconos-menu">
+        <div class="logo-teiki-footer-container">
+          <img
+              src="./iconos/Teiki-fondoTransparente.png"
+              alt="Logo"
+              class="logo-teiki-footer"
+          />
+      </div>
+      </li>
+    </ul>
+
+
+
+    </footer>
 
     <script defer src="js.js"></script>
   </body>

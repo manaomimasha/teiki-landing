@@ -62,6 +62,7 @@ body {
   font-size: 4rem;
   line-height: 1.3;
   font-weight: 500;
+  color: #07a9a9;
 }
 
 @media screen and (max-width: 767px) {
@@ -150,9 +151,9 @@ img {
 }
 
 .nav__logo {
-  height: 10rem;
+  height: 25rem;
   transition: all 0.3s;
-  margin-left: 30px;
+  margin-left: 1rem;
 }
 
 .nav__links {
@@ -204,6 +205,8 @@ img {
     padding: 0;
     flex-direction: column;
     margin-left: -50px;
+    margin-bottom: -5rem;
+    margin-top: 2rem;
   }
 
   .nav__links {
@@ -233,7 +236,7 @@ img {
   row-gap: 3rem;
   align-content: center;
   justify-content: center;
-  padding-top: 8rem;
+  /* padding-top: 8rem; */
   align-items: start;
   justify-items: start;
 }
@@ -660,11 +663,6 @@ h4 {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-.nav__logo {
-  height: 10rem;
-  transition: all 0.3s;
-}
-
 .nav__links {
   display: flex;
   align-items: center;
@@ -847,4 +845,44 @@ img {
   .vision {
     padding-top: 40rem;
   }
+}
+
+.contactanos {
+  border-top: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-top: 3.5rem;
+}
+
+.contactanos h4 {
+  color: rgb(201, 198, 198);
+}
+
+
+.logo-teiki-footer {
+  height: 15rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  margin-right:-10px;
+  background-color: transparent; /* Asegurar que el fondo sea transparente */
+}
+
+.logo-teiki-footer-container {
+  text-align: center; /* Centrar la imagen horizontalmente */
+  margin: 20px 0; /* Margen opcional alrededor del contenedor */
+}
+
+.contactenos-items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 5rem; */
+}
+
+.footer-logo{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 5rem; */
+  margin-top:-20px;
 }

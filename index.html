@@ -27,6 +27,11 @@
       rel="stylesheet"
       href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css"
     />
+<!-- para icono de apple  -->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
 
     <link rel="stylesheet" href="css.css" />
     <title>COMPRA CON TEIKI Y RETIRA EN EL LOCAL</title>
@@ -88,8 +93,9 @@
         <!-- <button class="btn--text btn--scroll-to"> -->
         <!-- <button> -->
         <!-- Nuestra visión &DownArrow; -->
-        <div>
-          <a
+        <div class="botones-play-apple-container" >
+          <div>
+            <a
             href="https://play.google.com/store/apps/details?id=com.teiki&pli=1"
           >
             <img
@@ -97,6 +103,24 @@
               alt="PlayStore logo"
             />
           </a>
+          
+          </div>
+         
+          <div class="botones-play-apple">
+            <!-- <center>  -->
+           <a href="https://www.teiki.com.ar/" target="_blank" class="market-btn apple-btn" role="button">
+             <span class="market-button-subtitle">Próximamente en:</span>
+             <span class="market-button-title">App Store</span>
+           </a>
+           
+           <!-- Google Play button -->
+           <!-- <a href="https://www.kobinet.com.tr/" target="_blank" class="market-btn google-btn" role="button">
+             <span class="market-button-subtitle">Descarga en </span>
+             <span class="market-button-title">Google Play</span>
+           </a> -->
+                    
+        </div>
+
         </div>
         <!-- </button> -->
         <!--     <img src="
@@ -290,7 +314,7 @@
           </div>
           <h5 class="operations__header">Para Comercios</h5>
           <!-- <p class="texto-elegirnos"> -->
-            <p>
+            <p class="texto-elegirnos">
             📍 Aumenta Tu Visibilidad: Destácate en el mapa. Haz que te
             encuentren fácil y rápido.<br />
             🔄 Catálogo en Vivo: Tus productos y precios siempre actualizados,
@@ -478,11 +502,18 @@
       <ul class="footer__item footer-logo">
         <li class="iconos-menu">
           <div class="logo-teiki-footer-container">
-            <img
+            <a class="footer__link" href="https://www.teiki.com.ar/"
+            > <img
+            src="./iconos/Teiki-fondoTransparente.png"
+            alt="Logo"
+            class="logo-teiki-footer"
+          /></a
+          > 
+           <!-- <img
               src="./iconos/Teiki-fondoTransparente.png"
               alt="Logo"
               class="logo-teiki-footer"
-            />
+            /> -->
           </div>
         </li>
       </ul>

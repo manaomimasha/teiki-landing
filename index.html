@@ -114,8 +114,101 @@
           ></iframe>
         </div>
       </div>
+      
     </header>
    
+
+    <header class="header ocultar">
+      <nav class="nav">
+        <img
+          src="https://live.staticflickr.com/65535/53888382252_6b04594d17.jpg"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jonas"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <!-- <li class="nav__item">
+            <a class="nav__link" href="#section--1">NUESTRA VISIÓN</a>
+          </li> -->
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">NUESTROS SERVICIOS</a>
+          </li>
+          <!-- <li class="nav__item">
+            <a class="nav__link" href="#section--3">TESTIMONIOS</a>
+          </li> -->
+        </ul>
+      </nav>
+
+      <ul class="get-app">
+        <li class="iconos-menu">
+          <a
+            target="_blank"
+            class="iconos"
+            href="https://ar.linkedin.com/company/teikiapp"
+          >
+            <i class="fab fa-linkedin" aria-hidden="true" title="linkedin"></i>
+          </a>
+          <a
+            target="_blank"
+            class="iconos"
+            href="mailto:teiki.company@gmail.com"
+          >
+            <i
+              class="fa-3x fa-envelope-o i-email"
+              aria-hidden="true"
+              title="email"
+            ></i>
+          </a>
+
+          <a
+            target="_blank"
+            class="iconos"
+            href="https://wa.me/5491154879987?text=Hola%2C%20qué%20tal%3F%20Me%20gustaría%20saber%20más%20sobre%20Teiki"
+          >
+            <i class="fab fa-whatsapp" aria-hidden="true" title="whatsapp"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.teiki&pli=1"
+          >
+            <img
+              src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/android.png"
+              alt="PlayStore logo"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <div class="header__title ocultar">
+        <h1>
+          Ahorra
+          <span class="highlight">tiempo</span> <br />
+          con nuestra
+          <span class="highlight">tecnología</span>
+        </h1>
+        <h4>¡Ahorra tiempo, vive más momentos especiales!</h4>
+        <button class="btn--text btn--scroll-to">
+          <!-- Nuestra visión &DownArrow; -->
+        </button>
+        <!--     <img src="
+          https://images.unsplash.com/photo-1521401292936-0a2129a30b1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" class="header__img" alt="imagen hero" /> -->
+        <div class="video-container">
+          <iframe
+            width="250"
+            height="560"
+            src="https://www.youtube.com/embed/25BwI7nMmVc?feature=share"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen="false"
+            class="video"
+            id="anurodh-random-id"
+          ></iframe>
+        </div>
+      </div>
+    </header>
  
    <section class="section servicios vision" id="section--1">
       <div class="section__title">
@@ -159,7 +252,7 @@
       
     </section> 
 
-    <section class="section vision" id="section--2">
+    <section class="section vision elegirnos" id="section--2">
       <div class="section__title">
         <!-- <h2 class="section__description">SERVICIOS</h2> -->
         <h3 class="section__header">Por que elegirnos?</h3>
@@ -196,7 +289,7 @@
             </div>
           </div>
           <h5 class="operations__header">Para Comercios</h5>
-          <p>
+          <p class="texto-elegirnos">
             📍 Aumenta Tu Visibilidad: Destácate en el mapa. Haz que te
             encuentren fácil y rápido.<br />
             🔄 Catálogo en Vivo: Tus productos y precios siempre actualizados,
@@ -326,6 +419,11 @@
       </div>
     </section> -->
 
+
+    
+
+
+
     <footer class="footer" id="section--3">
       <ul class="footer__nav">
         <li class="footer__item">
@@ -388,7 +486,176 @@
         </li>
       </ul>
     </footer>
-
+    
+    <div class="overlay hidden"></div>
+  
     <script defer src="js.js"></script>
+
+
+    <div class="ocultar"> 
+
+
+      <header class="header">
+        <nav class="nav">
+          <div></div>
+          <ul class="nav__links">
+            <!-- <li class="nav__item">
+              <a class="nav__link" href="#section--1">NUESTRA VISIÓN</a>
+            </li> -->
+            <li class="nav__item">
+              <a class="nav__link" href="#section--2">NUESTROS SERVICIOS</a>
+            </li>
+            <!-- <li class="nav__item">
+              <a class="nav__link" href="#section--3">TESTIMONIOS</a>
+            </li> -->
+          </ul>
+        </nav>
+  
+        <ul class="get-app"></ul>
+  
+        <div class="header__title">
+          <button class="btn--text btn--scroll-to">boton de scroll</button>
+        </div>
+      </header>
+  
+      <section class="section vision" id="section--2">
+        <div class="section__title">
+          <h2 class="section__description">SERVICIOS</h2>
+          <h3 class="section__header">Por que elegirnos?</h3>
+        </div>
+  
+        <div class="operations">
+          <div class="operations__tab-container">
+            <button
+              class="btn operations__tab operations__tab--1 operations__tab--active"
+              data-tab="1"
+            >
+              <span>01</span>Para Comercios este anda
+            </button>
+            <button class="btn operations__tab operations__tab--2" data-tab="2">
+              <span>02</span> Para Usuarios
+            </button>
+            <!--  <button class="btn operations__tab operations__tab--3" data-tab="3">
+              <span>03</span> Para Usuarios
+            </button> -->
+          </div>
+          <div
+            class="operations__content operations__content--1 operations__content--active"
+          >
+            <div class="icono-centrado">
+              <div class="operations__icon operations__icon--1">
+                <img
+                  src="./iconos/tienda.png"
+                  alt="Tienda"
+                  class="operations__img"
+                />
+                <svg>
+                  <use xlink:href="img/icons.svg#icon-upload"></use>
+                </svg>
+              </div>
+            </div>
+            <h5 class="operations__header">Para Comercios</h5>
+            <p>
+              📍 Aumenta Tu Visibilidad: Destácate en el mapa. Haz que te
+              encuentren fácil y rápido.<br />
+              🔄 Catálogo en Vivo: Tus productos y precios siempre actualizados,
+              sin complicaciones.<br />
+              💬 Pedidos Directos a WhatsApp: Habla directo con tus clientes, sin
+              intermediarios.<br />
+              💸 Más Ganancias, Menos Comisiones: Olvídate de las tarifas
+              excesivas, maximiza tus ingresos.<br />
+            </p>
+          </div>
+  
+          <!--  Encuentra lo que necesitas  -->
+          <div
+            class="operations__content operations__content--2 operations__content--active"
+          >
+            <div class="icono-centrado">
+              <div class="operations__icon operations__icon--2">
+                <img src="./iconos/user.png" alt="user" class="operations__img" />
+                <svg>
+                  <use xlink:href="img/icons.svg#icon-upload"></use>
+                </svg>
+              </div>
+            </div>
+            <h5 class="operations__header">Para Usuarios</h5>
+            <p>
+              🗺️ Explora Localmente: Descubre lo mejor cerca de ti con solo unos
+              toques.<br />
+              🛒 Compra Fácil: Añade al carrito, envía por WhatsApp y ¡listo!<br />
+              📱 Contacto Directo: Personaliza tus pedidos como quieras, cuando
+              quieras.<br />
+              👍 Apoya a tu Comunidad: Tus compras ayudan a crecer a tus comercios
+              locales favoritos.<br />
+            </p>
+          </div>
+  
+          <!-- COPIA3: n rojo  -->
+          <!--   <div class="operations__content operations__content--3 operations__content--active">
+            <div class="operations__icon operations__icon--3">
+              <svg> -->
+          <!-- <use xlink:href="img/icons.svg#icon-upload"></use> -->
+          <!-- <use xlink:href="img/icons.svg#icon-home"></use> -->
+          <!--            <use xlink:href="img/icons.svg#icon-user-x"></use>
+                            </svg>
+                          </div>
+                          <h5 class="operations__header">
+                            Para Usuarios
+                          </h5>
+                          <p>
+                            🗺️ Explora Localmente: Descubre lo mejor cerca de ti con solo unos toques.
+                            🛒 Compra Fácil: Añade al carrito, envía por WhatsApp y ¡listo!
+                            📱 Contacto Directo: Personaliza tus pedidos como quieras, cuando quieras.
+                            👍 Apoya a tu Comunidad: Tus compras ayudan a crecer a tus comercios locales favoritos.
+                          </p>
+                        </div> -->
+  
+          <div class="operations__content operations__content--2">
+            <div class="operations__icon operations__icon--2">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-home"></use>
+              </svg>
+            </div>
+            <h5 class="operations__header">
+              Buy a home or make your dreams come true, with instant loans.
+            </h5>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+          </div>
+          <div class="operations__content operations__content--3">
+            <div class="operations__icon operations__icon--3">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-user-x"></use>
+              </svg>
+            </div>
+            <h5 class="operations__header">
+              No longer need your account? No problem! Close it instantly.
+            </h5>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+  
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+          Open your bank account <br />
+          in just <span class="highlight">5 minutes</span>
+        </h2>
+      </div>
+  
+      <div class="overlay hidden"></div>
+      <script defer src="js.js"></script>
+    </div>
   </body>
 </html>
